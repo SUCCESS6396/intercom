@@ -1,26 +1,20 @@
 {
-  "name": "contract-test-latest",
-  "version": "0.0.1",
-  "type": "module",
+  "name": "taskrelay",
+  "version": "1.0.0",
+  "description": "P2P task delegation and confirmation board built on Intercom (Trac Network)",
   "main": "index.js",
-  "pear": {
-    "name": "contract-test-latest",
-    "type": "terminal"
+  "scripts": {
+    "admin": "pear run . --admin",
+    "worker": "pear run . --worker"
   },
   "dependencies": {
-    "b4a": "^1.6.7",
-    "bare-ws": "2.0.3",
-    "compact-encoding": "^2.18.0",
-    "crypto": "npm:bare-node-crypto",
-    "fs": "npm:bare-node-fs",
-    "path": "npm:bare-node-path",
-    "protomux": "^3.10.1",
-    "trac-msb": "git+https://github.com/Trac-Systems/main_settlement_bus.git#5088921",
-    "trac-peer": "git+https://github.com/Trac-Systems/trac-peer.git#d108f52",
-    "trac-wallet": "1.0.1",
-    "util": "npm:bare-node-util"
+    "b4a": "^1.6.6",
+    "hypercore-crypto": "^3.4.2",
+    "hyperswarm": "^4.7.15"
   },
-  "overrides": {
-    "trac-wallet": "1.0.1"
+  "license": "MIT",
+  "pear": {
+    "name": "taskrelay",
+    "type": "terminal"
   }
 }
